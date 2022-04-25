@@ -1,0 +1,13 @@
+<section class="boxer_banner">
+  
+    <div *ngFor='let entry of banner?.entries'>
+        <h1>{{entry?.title}}</h1>
+        <p>{{entry?.text_description}}</p>
+        <button class="button">know more</button>
+       
+        <img class="resultImg"
+        [src]="entry.banner_photo.url">
+    </div>
+   
+</section>
+<h1 class="titulo">All about your favorite games</h1>
